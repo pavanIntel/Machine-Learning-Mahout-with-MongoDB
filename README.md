@@ -36,66 +36,67 @@ To get this tiny ratings matrix into your MongoDB, open the MongoDB console and 
            db.books.save({"title" : "The Innocent"});
            db.books.save({"title" : "Pride and Prejudice"});
            
-db.ratings.save({ "user_id" : db.users.findOne({name:"Billy"})._id,
-"item_id" : db.books.findOne({title:"Harry Potter"})._id,
-"preference" : 4,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Billy"})._id,
-"item_id" : db.books.findOne({title:"Twilight"})._id,
-"preference" : 1,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Billy"})._id,
-"item_id" : db.books.findOne({title:"The Innocent"})._id,
-"preference" : 3,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
-"item_id" : db.books.findOne({title:"Game of Thrones"})._id,
-"preference" : 1,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
-"item_id" : db.books.findOne({title:"Pretty Little Liars"})._id,
-"preference" : 5,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
-"item_id" : db.books.findOne({title:"Twilight"})._id,
-"preference" : 4,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
-"item_id" : db.books.findOne({title:"Pride and Prejudice"})._id,
-"preference" : 5,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Klara"})._id,
-"item_id" : db.books.findOne({title:"Alice in Wonderland"})._id,
-"preference" : 3,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Klara"})._id,
-"item_id" : db.books.findOne({title:"Pretty Little Liars"})._id,
-"preference" : 4,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Joseph"})._id,
-"item_id" : db.books.findOne({title:"Sherlock Holmes"})._id,
-"preference" : 3,
-"created_at" : 1339436655 });
-db.ratings.save({"user_id" : db.users.findOne({name:"Joseph"})._id,
-"item_id" : db.books.findOne({title:"Game of Thrones"})._id,
-"preference" : 5,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Bob"})._id,
-"item_id" : db.books.findOne({title:"Harry Potter"})._id,
-"preference" : 2,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Bob"})._id,
-"item_id" : db.books.findOne({title:"Sherlock Holmes"})._id,
-"preference" : 5,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Bob"})._id,
-"item_id" : db.books.findOne({title:"Game of Thrones"})._id,
-"preference" : 4,
-"created_at" : 1339436655 });
-db.ratings.save({ "user_id" : db.users.findOne({name:"Sue"})._id,
-"item_id" : db.books.findOne({title:"Twilight"})._id,
-"preference" : 5,
-"created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Billy"})._id,
+           "item_id" : db.books.findOne({title:"Harry Potter"})._id,
+           "preference" : 4,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Billy"})._id,
+           "item_id" : db.books.findOne({title:"Twilight"})._id,
+           "preference" : 1,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Billy"})._id,
+           "item_id" : db.books.findOne({title:"The Innocent"})._id,
+           "preference" : 3,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
+           "item_id" : db.books.findOne({title:"Game of Thrones"})._id,
+           "preference" : 1,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
+           "item_id" : db.books.findOne({title:"Pretty Little Liars"})._id,
+           "preference" : 5,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
+           "item_id" : db.books.findOne({title:"Twilight"})._id,
+           "preference" : 4,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Sarah"})._id,
+           "item_id" : db.books.findOne({title:"Pride and Prejudice"})._id,
+           "preference" : 5,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Klara"})._id,
+           "item_id" : db.books.findOne({title:"Alice in Wonderland"})._id,
+           "preference" : 3,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Klara"})._id,
+           "item_id" : db.books.findOne({title:"Pretty Little Liars"})._id,
+           "preference" : 4,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Joseph"})._id,
+           "item_id" : db.books.findOne({title:"Sherlock Holmes"})._id,
+           "preference" : 3,
+           "created_at" : 1339436655 });
+           db.ratings.save({"user_id" : db.users.findOne({name:"Joseph"})._id,
+           "item_id" : db.books.findOne({title:"Game of Thrones"})._id,
+           "preference" : 5,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Bob"})._id,
+           "item_id" : db.books.findOne({title:"Harry Potter"})._id,
+           "preference" : 2,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Bob"})._id,
+           "item_id" : db.books.findOne({title:"Sherlock Holmes"})._id,
+           "preference" : 5,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Bob"})._id,
+           "item_id" : db.books.findOne({title:"Game of Thrones"})._id,
+           "preference" : 4,
+           "created_at" : 1339436655 });
+           db.ratings.save({ "user_id" : db.users.findOne({name:"Sue"})._id,
+           "item_id" : db.books.findOne({title:"Twilight"})._id,
+           "preference" : 5,
+           "created_at" : 1339436655 });
+           
 If you are building and running a Java project dont forget to add following libraries:
 
 MongoDB Java API
@@ -103,8 +104,9 @@ Uncommons Math
 Mahout Math, Mahout Core, Mahout Integration, Mahout Collections
 After you have created the MongoDB content above, you can create a new instance of the class MongoDBDataModel. This instance of DataModel is the connection to your MongoDB database. The model provides an access interface to all necessary information about items, users and their ratings for the recommendation engine:
 
- 
-MongoDBDataModel dbm = new MongoDBDataModel("127.0.0.1",
+
+
+                MongoDBDataModel dbm = new MongoDBDataModel("127.0.0.1",
                                             27017,
                                              "test",
                                           "ratings",
